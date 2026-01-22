@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Momo+Signature&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(8, 8, 67),
+    rgb(5, 1, 18),
+    rgb(8, 8, 67)
+  );
+}
+.parent {
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #230845;
+  box-shadow: 5px 5px 20px black;
+  color: #ffffff;
+  overflow: hidden;
+}
+.parent nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  height: 15%;
+  background-color: plum;
+}
+nav h1 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+nav h1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, rgb(28, 9, 114), rgb(214, 214, 255));
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  transition: 0.5s ease;
+}
+ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+ul li #sub {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(90deg, #c04848, #480048, #c04848);
+  margin: 10px;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 20px;
+}
+ul li #sub:hover {
+  background-position: right center;
+}
+.parent .main-content {
+  display: flex;
+  align-items: center;
+  height: 85%;
+}
+
+.main-content .left,
+.main-content .right {
+  width: 50%;
+  padding: 40px 80px;
+}
+.left h3 {
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.left h1 {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.left h1 span {
+  font-weight: 800;
+  color: #eeff00;
+}
+
+.left h2 {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 10px 0;
+}
+.left p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.right {
+  transform-origin: center;
+}
+
+.right img {
+  width: 380px;
+  transform: translateY(-30px);
+  filter: saturate(120%);
+  transition: transform 0.5s ease-out;
+}
+.right:hover img {
+  transform: scale(1.2);
+}
+
+.left button {
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  background-color: #033677;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.left button:hover {
+  background-color: rgb(42, 0, 93);
+  box-shadow: 0 0 10px white;
+}
+.main_content .right {
+  width: 60%;
+  height: 100%;
+  padding-left: 100px;
+  overflow: hidden;
+}
+.gradient {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 48%;
+  left: 56%;
+  border-radius: 50%;
+  background-color: rgb(158, 109, 255);
+  z-index: -1;
+  filter: blur(50px);
+  box-shadow:
+    0 0 250px rgb(157, 108, 255),
+    0 0 200px purple,
+    0 0 150px rgb(204, 0, 255);
+}
